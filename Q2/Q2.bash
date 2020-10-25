@@ -20,6 +20,7 @@ test ! -d $dir && echo -e "The $dir is not exist in your system.\n\n" && exit 0
 echo -e "\n---------------You find files are:---------------\n"
 
 find $dir -type f -name $keyword
+find $dir -type f -name $keyword -print | wc -l
 
 echo -e "\n-------------------------------------------------"
 echo -e "\nFind Finished!\n"
